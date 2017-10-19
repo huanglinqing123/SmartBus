@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chewei" >
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="@android:drawable/edit_text"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="请输入您所在的城市" >
+
+        <requestFocus android:layout_width="wrap_content" />
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autoCompleteTextView1"
+        android:layout_alignBottom="@+id/autoCompleteTextView1"
+        android:layout_alignParentRight="true"
+        android:onClick="huang"
+        android:text="查询" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextView1" >
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/scrollView1" >
+
+    </ListView>
+
+</RelativeLayout>

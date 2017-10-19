@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smarttransportation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/huang"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.smarttransportation.Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Xundi.Wolf.Xianhao"
+            android:label="尾号限行" >
+        </activity>
+        <activity
+            android:name="com.Xundi.Wolf.Zhandian"
+            android:label="站点" >
+        </activity>
+        <activity
+            android:name="com.Xundi.Wolf.Checichaxun"
+            android:label="车次查询" >
+        </activity>
+        <activity
+            android:name="com.Xundi.Wolf.Weather"
+            android:label="天气" >
+        </activity>
+        <activity
+            android:name="com.example.tag.WZSelect"
+            android:label="违章缴费" >
+        </activity>
+        <activity
+            android:name="com.example.tag.Dingdanzhifu"
+            android:label="订单支付" >
+        </activity>
+        <activity
+            android:name="com.Xundi.Wolf.Chewei"
+            android:label="停车场" >
+        </activity>
+        <activity android:name="com.example.smarttransportation.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.example.tag.tijiaodingdan"
+            android:label="提交订单" >
+        </activity>
+        <activity
+            android:name="com.example.tag.zhengjianshangchuan"
+            android:label="证件上传" >
+        </activity>
+        <activity
+            android:name="com.example.smarttransportation.Weizhang2"
+            android:label="@string/title_activity_weizhang2" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"		android:gravity="center"
+    android:orientation="vertical" 	android:background="@drawable/bkg_img_default">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <com.example.smarttransportation.MyImageView
+            android:id="@+id/MyImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/yinshi"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="matrix"
+            android:src="@drawable/title" />
+
+        <RelativeLayout
+            android:id="@+id/yinshi"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignBottom="@+id/linearLayout1"
+            android:layout_alignParentLeft="true"
+            android:onClick="xianhaochaxun"
+            android:layout_margin="2dp"
+            android:background="@drawable/xianhao" >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jiaju"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_alignRight="@+id/jiaju"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/yinshi"
+            android:background="@drawable/tingchechang"
+            android:onClick="tingchechang" >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jiaju"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/linearLayout1"
+            android:onClick="shishigongjiao"
+            android:layout_margin="2dp"
+            android:background="@drawable/gongjiao" >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jiaohuan"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:layout_alignLeft="@+id/yinshi"
+            android:layout_alignParentRight="true"
+            android:onClick="weather"
+            android:layout_margin="2dp"
+            android:layout_below="@+id/jiaju"
+            android:background="@drawable/tianqi" >
+
+        </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/boot"
+             android:layout_width="match_parent"
+             android:layout_height="120dp"
+             android:layout_alignRight="@+id/MyImageView01"
+             android:layout_below="@+id/jiaohuan"
+             android:layout_margin="2dp"
+             android:background="@drawable/bottom1" >
+
+        </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/qixing"
+             android:layout_width="110dp"
+             android:layout_height="240dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignTop="@+id/yinshi"
+             android:layout_toRightOf="@+id/jiaju"
+             android:onClick="weizhangjiaofei"
+            
+             android:layout_margin="2dp"
+             android:background="@drawable/weijiangjiaofei" >
+
+         </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
